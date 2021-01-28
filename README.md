@@ -1,7 +1,7 @@
 # FlyingForts
  The official repository for the mod "Flying Forts" for Forts on the Steam workshop.
  
- I will not be accepting new weapons. Please fork this repo if you wish to.
+ I will not be accepting new weapons because Flying Forts isn't supposed to be a weapon pack. Please fork this repo if you wish to do that.
  
  To upload your own version of Flying Forts to the steam workshop, please credit the original mod with the link to the workshop page.
  For example:
