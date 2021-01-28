@@ -3,7 +3,7 @@
  
  I will not be accepting new weapons. Please fork this repo if you wish to.
  
- To upload your own version of Flying Forts to the steam workshop, you must credit the original mod with the link to the workshop page.
+ To upload your own version of Flying Forts to the steam workshop, please credit the original mod with the link to the workshop page.
  For example:
  
  Original mod "Flying Forts": https://steamcommunity.com/sharedfiles/filedetails/?id=1835113084
