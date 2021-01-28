@@ -1,0 +1,7 @@
+table.insert(ProjectilesToAffect, "sbnukebomb")
+table.insert(ProjectilesToAffect, "sbhangcannon")
+table.insert(ProjectilesToAffect, "sbthunder")
+table.insert(ProjectilesToAffect, "sbthunder")
+table.insert(ProjectilesToAffect, "sblightning1")
+table.insert(ProjectilesToAffect, "sblightning2")
+table.insert(ProjectilesToAffect, "sblightning3")

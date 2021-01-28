@@ -1,0 +1,6 @@
+table.insert(WeaponsToMark, "sbcarpetbomb")
+table.insert(WeaponsToMark, "sbnukebomb")
+table.insert(WeaponsToMark, "sbhangflak")
+table.insert(WeaponsToMark, "sbhangcannon")
+table.insert(WeaponsToMark, "sblightning")
+table.insert(WeaponsToMark, "sbthunderbolt")
