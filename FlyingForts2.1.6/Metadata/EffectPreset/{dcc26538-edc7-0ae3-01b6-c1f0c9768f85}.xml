@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="EffectPreset" id="{dcc26538-edc7-0ae3-01b6-c1f0c9768f85}">
+		<property name="name">
+			<value>FMOD Highpass Simple (4)</value>
+		</property>
+		<relationship name="folder">
+			<destination>{5fd41b05-c57e-0cd6-2d6b-a7d374960d51}</destination>
+		</relationship>
+		<relationship name="effect">
+			<destination>{e3a4aac1-e2e3-4820-8066-c007c5ea568a}</destination>
+		</relationship>
+	</object>
+	<object class="HighpassSimpleEffect" id="{e3a4aac1-e2e3-4820-8066-c007c5ea568a}">
+		<property name="cutoff">
+			<value>1000</value>
+		</property>
+		<relationship name="automators">
+			<destination>{8e3482b6-6680-40da-8594-4d30f2d2decc}</destination>
+		</relationship>
+	</object>
+	<object class="Automator" id="{8e3482b6-6680-40da-8594-4d30f2d2decc}">
+		<property name="nameOfPropertyBeingAutomated">
+			<value>cutoff</value>
+		</property>
+		<relationship name="automationCurves">
+			<destination>{4e4bbbdc-8784-4e62-9671-1b65d8f2f8bd}</destination>
+		</relationship>
+	</object>
+	<object class="AutomationCurve" id="{4e4bbbdc-8784-4e62-9671-1b65d8f2f8bd}">
+		<relationship name="parameter">
+			<destination>{dabfcd41-64dd-4c2a-be52-ca80cf9756a2}</destination>
+		</relationship>
+		<relationship name="automationPoints">
+			<destination>{16fd55a4-cfa8-4543-9018-7743e9099daf}</destination>
+			<destination>{47a57f9c-2052-4078-a239-9bf3cba2a8c7}</destination>
+		</relationship>
+	</object>
+	<object class="AutomationPoint" id="{16fd55a4-cfa8-4543-9018-7743e9099daf}">
+		<property name="position">
+			<value>0</value>
+		</property>
+		<property name="value">
+			<value>10</value>
+		</property>
+	</object>
+	<object class="AutomationPoint" id="{47a57f9c-2052-4078-a239-9bf3cba2a8c7}">
+		<property name="position">
+			<value>4997.3103819257658</value>
+		</property>
+		<property name="value">
+			<value>256.521698</value>
+		</property>
+	</object>
+</objects>

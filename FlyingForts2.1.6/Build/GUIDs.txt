@@ -1,0 +1,20 @@
+{1e64267b-be7e-427c-8183-4e1857eed1d6} bank:/FlyingForts_Bank
+{867906af-cf05-0e3e-07ca-c4e6a61dd74e} bank:/FlyingForts_Bank.strings
+{018e26de-ab52-41f3-8404-a7d35b663526} bus:/
+{3af97983-b22f-48ba-847d-cb76d389a587} bus:/Reverb
+{92f7025f-bf05-4f70-afde-cc14deac8f2f} bus:/SFX
+{d7d8ca0d-5c9b-43d1-ba1f-2719ce69e2a7} event:/mods/sbFFsoundbank/effects/antigravity_explode
+{3d08b70f-00cb-479b-acf5-73664b0fd4d2} event:/mods/sbFFsoundbank/effects/balloonpop
+{2a800479-e40b-40ad-b683-f95199e8bbff} event:/mods/sbFFsoundbank/effects/bayopen
+{4411c141-70d0-41f4-b15e-eef54ca5acd6} event:/mods/sbFFsoundbank/effects/bayopenlarge
+{d2cb3d33-a813-4558-99ef-ab2793a22b88} event:/mods/sbFFsoundbank/effects/carpetbombtrail
+{0fc934f0-2c05-4d93-aa9b-b5a287f70f13} event:/mods/sbFFsoundbank/effects/fire_quadcannon
+{4e15496d-fdab-4d91-a554-8f84d5c2dd67} event:/mods/sbFFsoundbank/effects/jet
+{90b192fe-6c51-4ed7-aed9-caabac70f369} event:/mods/sbFFsoundbank/effects/lightningfire
+{2b3e9b4c-3cf9-4e86-890a-226101eac84e} event:/mods/sbFFsoundbank/effects/lightningimpact
+{960081c2-5168-46d4-b5cd-e46edc9b8037} event:/mods/sbFFsoundbank/effects/nukebombtrail
+{c1d7b50d-45dd-429d-bb9b-b04de078789d} event:/mods/sbFFsoundbank/effects/thunderfire
+{8d0b7be7-5dff-4079-86f3-137796c4f18c} event:/mods/sbFFsoundbank/effects/thunderimpact
+{3bb2aa30-96d8-4f17-a190-d96a3fa4da29} event:/mods/your mod/effects/your sound
+{dabfcd41-64dd-4c2a-be52-ca80cf9756a2} parameter:/Distance
+{60ac718f-7c1d-482b-a5eb-3159d36bc5e2} parameter:/silenced

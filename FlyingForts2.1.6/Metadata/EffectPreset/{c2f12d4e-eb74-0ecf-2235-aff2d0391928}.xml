@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="EffectPreset" id="{c2f12d4e-eb74-0ecf-2235-aff2d0391928}">
+		<property name="name">
+			<value>Send (2)</value>
+		</property>
+		<relationship name="folder">
+			<destination>{5fd41b05-c57e-0cd6-2d6b-a7d374960d51}</destination>
+		</relationship>
+		<relationship name="effect">
+			<destination>{fd97e2b7-e450-4c0c-a3e5-ae05dca5c027}</destination>
+		</relationship>
+	</object>
+	<object class="MixerSend" id="{fd97e2b7-e450-4c0c-a3e5-ae05dca5c027}">
+		<property name="inputFormat">
+			<value>0</value>
+		</property>
+		<relationship name="automators">
+			<destination>{d25c3ca1-3a2d-469f-a3ac-adb2ad606783}</destination>
+		</relationship>
+		<relationship name="mixerReturn">
+			<destination>{3af97983-b22f-48ba-847d-cb76d389a587}</destination>
+		</relationship>
+	</object>
+	<object class="Automator" id="{d25c3ca1-3a2d-469f-a3ac-adb2ad606783}">
+		<property name="nameOfPropertyBeingAutomated">
+			<value>level</value>
+		</property>
+		<relationship name="automationCurves">
+			<destination>{e7e3919a-6d60-4245-b41d-c7398ebb906e}</destination>
+		</relationship>
+	</object>
+	<object class="AutomationCurve" id="{e7e3919a-6d60-4245-b41d-c7398ebb906e}">
+		<relationship name="parameter">
+			<destination>{dabfcd41-64dd-4c2a-be52-ca80cf9756a2}</destination>
+		</relationship>
+		<relationship name="automationPoints">
+			<destination>{cfcf1111-4aa6-45dc-8b6c-69a4ce3e2e24}</destination>
+			<destination>{e244768a-0881-4cbe-bbe0-6f45d7e42eb1}</destination>
+		</relationship>
+	</object>
+	<object class="AutomationPoint" id="{cfcf1111-4aa6-45dc-8b6c-69a4ce3e2e24}">
+		<property name="position">
+			<value>0</value>
+		</property>
+		<property name="value">
+			<value>-80</value>
+		</property>
+		<property name="curveShape">
+			<value>-0.316297889</value>
+		</property>
+	</object>
+	<object class="AutomationPoint" id="{e244768a-0881-4cbe-bbe0-6f45d7e42eb1}">
+		<property name="position">
+			<value>10000</value>
+		</property>
+		<property name="value">
+			<value>-4.25478363</value>
+		</property>
+	</object>
+</objects>

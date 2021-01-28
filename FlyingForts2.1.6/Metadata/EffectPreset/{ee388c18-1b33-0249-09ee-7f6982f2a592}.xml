@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="EffectPreset" id="{ee388c18-1b33-0249-09ee-7f6982f2a592}">
+		<property name="name">
+			<value>FMOD Spatializer (3)</value>
+		</property>
+		<relationship name="folder">
+			<destination>{5fd41b05-c57e-0cd6-2d6b-a7d374960d51}</destination>
+		</relationship>
+		<relationship name="effect">
+			<destination>{d15e43e1-1417-408a-883e-7e9e8e6e7c9d}</destination>
+		</relationship>
+	</object>
+	<object class="SpatialiserEffect" id="{d15e43e1-1417-408a-883e-7e9e8e6e7c9d}" />
+</objects>

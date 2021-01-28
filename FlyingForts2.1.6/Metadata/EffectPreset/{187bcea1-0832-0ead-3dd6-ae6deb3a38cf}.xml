@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="EffectPreset" id="{187bcea1-0832-0ead-3dd6-ae6deb3a38cf}">
+		<property name="name">
+			<value>Send</value>
+		</property>
+		<relationship name="folder">
+			<destination>{5fd41b05-c57e-0cd6-2d6b-a7d374960d51}</destination>
+		</relationship>
+		<relationship name="effect">
+			<destination>{271d0158-0716-4c6e-bc06-af9ae7a6e1c0}</destination>
+		</relationship>
+	</object>
+	<object class="MixerSend" id="{271d0158-0716-4c6e-bc06-af9ae7a6e1c0}">
+		<property name="inputFormat">
+			<value>2</value>
+		</property>
+		<relationship name="automators">
+			<destination>{38aff906-e774-4c1e-97e7-10c671227b8f}</destination>
+		</relationship>
+		<relationship name="mixerReturn">
+			<destination>{3af97983-b22f-48ba-847d-cb76d389a587}</destination>
+		</relationship>
+	</object>
+	<object class="Automator" id="{38aff906-e774-4c1e-97e7-10c671227b8f}">
+		<property name="nameOfPropertyBeingAutomated">
+			<value>level</value>
+		</property>
+		<relationship name="automationCurves">
+			<destination>{ff956159-ef18-475e-81c9-d5c50224edf3}</destination>
+		</relationship>
+	</object>
+	<object class="AutomationCurve" id="{ff956159-ef18-475e-81c9-d5c50224edf3}">
+		<relationship name="parameter">
+			<destination>{dabfcd41-64dd-4c2a-be52-ca80cf9756a2}</destination>
+		</relationship>
+		<relationship name="automationPoints">
+			<destination>{b11fc0d9-7ff1-423f-997f-23ac61195953}</destination>
+			<destination>{e947f166-841c-42ea-9015-4ed9a4335397}</destination>
+		</relationship>
+	</object>
+	<object class="AutomationPoint" id="{b11fc0d9-7ff1-423f-997f-23ac61195953}">
+		<property name="position">
+			<value>10000</value>
+		</property>
+		<property name="value">
+			<value>-4.43534088</value>
+		</property>
+	</object>
+	<object class="AutomationPoint" id="{e947f166-841c-42ea-9015-4ed9a4335397}">
+		<property name="position">
+			<value>0</value>
+		</property>
+		<property name="value">
+			<value>-80</value>
+		</property>
+		<property name="curveShape">
+			<value>-0.388725132</value>
+		</property>
+	</object>
+</objects>

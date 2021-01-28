@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="Bank" id="{1cf236da-0384-47d4-90eb-09e748810dad}">
+		<property name="note">
+			<value>If you are making a new mod with this proejct, please delete the master bank and create a new one</value>
+		</property>
+		<property name="name">
+			<value>FlyingFortsBank</value>
+		</property>
+		<property name="isMasterBank">
+			<value>true</value>
+		</property>
+		<relationship name="folder">
+			<destination>{32be2ae0-6ed5-4c91-b167-82c65eae2fe4}</destination>
+		</relationship>
+	</object>
+</objects>

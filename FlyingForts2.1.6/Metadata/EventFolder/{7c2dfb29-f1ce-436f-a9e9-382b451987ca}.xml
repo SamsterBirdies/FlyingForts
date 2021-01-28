@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="EventFolder" id="{7c2dfb29-f1ce-436f-a9e9-382b451987ca}">
+		<property name="note">
+			<value>If you are making a new mod with this project, please delete the master bank and create a new one</value>
+		</property>
+		<property name="name">
+			<value>sbFFsoundbank</value>
+		</property>
+		<relationship name="folder">
+			<destination>{635afd5c-e82c-40ea-901c-63d64381a4c2}</destination>
+		</relationship>
+	</object>
+</objects>
