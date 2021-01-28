@@ -10,6 +10,8 @@
  
  To get sound working in the mod, download FMOD studio version 2.1.6 and import the project folder "FlyingForts2.1.6".
  Delete the master bank, create a new master bank, and re-assign the sound events to that bank.
- Then "Build" the bank (F7), and copy the .bank files into FlyingFortsMod/audio
+ Then "Build" the bank (F7), and copy the .bank files into FlyingFortsMod/audio/
+
+ Alternatively, if you don't want to use FMOD studio, the sound files are in FlyingForts2.1.6/Assets/
  
 Changing the "sb" prefixes in the mod will also be appreciated for maxium compatibility.
