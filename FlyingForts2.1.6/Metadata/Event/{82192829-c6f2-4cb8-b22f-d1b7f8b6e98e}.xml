@@ -236,6 +236,9 @@
 		<relationship name="automators">
 			<destination>{c4eeb929-2b0a-4bd4-a813-800ab35cae3b}</destination>
 		</relationship>
+		<relationship name="modulators">
+			<destination>{babe5197-964a-4af5-9b09-c216bb9bbce0}</destination>
+		</relationship>
 	</object>
 	<object class="MixerSend" id="{f1bfd32f-d717-44a6-a0e8-1f0de3ac0896}">
 		<property name="inputFormat">
@@ -288,6 +291,23 @@
 		<relationship name="automationCurves">
 			<destination>{345479eb-acc5-454d-add2-eec98ca72545}</destination>
 		</relationship>
+	</object>
+	<object class="ADSRModulator" id="{babe5197-964a-4af5-9b09-c216bb9bbce0}">
+		<property name="nameOfPropertyBeingModulated">
+			<value>frequencyA</value>
+		</property>
+		<property name="attackTime">
+			<value>100</value>
+		</property>
+		<property name="peakValue">
+			<value>25</value>
+		</property>
+		<property name="holdTime">
+			<value>100</value>
+		</property>
+		<property name="decayTime">
+			<value>220</value>
+		</property>
 	</object>
 	<object class="Automator" id="{2ab23a9a-910c-4c78-b750-fc615f75c9a3}">
 		<property name="nameOfPropertyBeingAutomated">
@@ -367,10 +387,10 @@
 	</object>
 	<object class="AutomationPoint" id="{fd5225dd-2f04-45c2-9c5a-c38acbc7ae49}">
 		<property name="position">
-			<value>0.974569319114028</value>
+			<value>0.60000000000000009</value>
 		</property>
 		<property name="value">
-			<value>16058.0391</value>
+			<value>22000</value>
 		</property>
 	</object>
 	<object class="AutomationPoint" id="{804bb77b-97a7-4ea9-af41-f0cae82a83f7}">
@@ -378,7 +398,7 @@
 			<value>0.99589827727645619</value>
 		</property>
 		<property name="value">
-			<value>1000</value>
+			<value>300</value>
 		</property>
 	</object>
 	<object class="AutomationPoint" id="{69baa22f-586f-465a-824f-f08ce416bb72}">
