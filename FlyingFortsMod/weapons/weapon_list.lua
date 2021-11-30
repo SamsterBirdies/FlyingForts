@@ -1,3 +1,5 @@
+table.insert(Sprites, ButtonSprite("hud-sbinf-upgrade", "context/infupgrade", nil, nil, nil, nil, path))
+
 table.insert(Sprites, ButtonSprite("hud-group-sbpropeller", "groups/Group-sbpropeller", GroupButtonSpriteBottom, GroupButtonSpriteBottom, nil, nil, path))
 table.insert(Sprites, ButtonSprite("hud-sbpropeller-icon", "HUD/HUD-propeller", nil, ButtonSpriteBottom, nil, nil, path))
 table.insert(Sprites, DetailSprite("hud-detail-sbpropeller", "sbpropeller", path))
@@ -26,18 +28,60 @@ table.insert(Weapons, IndexOfWeapon("machinegun"),
 		SelectEffect = "ui/hud/weapons/ui_weapons",
 		Upgrades =
 		{
-			["sbjet"] =
 			{
 				Enabled = true,
 				SaveName = "sbjet",
 				MetalCost = 300,
 				EnergyCost = 2000,
 			},
+			{
+				Enabled = true,
+				SaveName = "sbpropellerinfinite",
+				MetalCost = 50,
+				EnergyCost = 300,
+				Button = "hud-sbinf-upgrade",
+			},
 		},
 		CompatibleGroupTypes =
 		{
 			"sbjet",
 			"sbrocket",
+		},
+})
+table.insert(Weapons, IndexOfWeapon("machinegun"),
+{
+		Enabled = false,
+		SaveName = "sbpropellerinfinite",
+		FileName = path .. "/weapons/sbpropellerinfinite.lua",
+		Icon = "hud-sbpropeller-icon",
+		GroupButton = "hud-group-sbpropeller",
+		Detail = "hud-detail-sbpropeller",
+		BuildTimeIntermediate = 1.0,
+		BuildTimeComplete = 5.0,
+		ScrapPeriod = 3,
+		MetalCost = 130,
+		EnergyCost = 800,
+		MetalRepairCost = 15,
+		EnergyRepairCost = 250,
+		MetalReclaimMin = 0.25,
+		MetalReclaimMax = 0.5,
+		EnergyReclaimMin = 0.1,
+		EnergyReclaimMax = 0.5,
+		MaxSpotterAssistance = 0, -- machinegun doesn't benefit from spotters
+		MaxUpAngle = 30,
+		BuildOnGroundOnly = false,
+		SelectEffect = "ui/hud/weapons/ui_weapons",
+		Upgrades =
+		{
+			{
+				Enabled = true,
+				SaveName = "sbjet",
+				MetalCost = 250,
+				EnergyCost = 1700,
+			},
+		},
+		CompatibleGroupTypes =
+		{
 		},
 })
 table.insert(Sprites, DetailSprite("hud-detail-sbjet", "sbjet", path))
@@ -68,12 +112,18 @@ table.insert(Weapons, IndexOfWeapon("machinegun"),
 		SelectEffect = "ui/hud/weapons/ui_weapons",
 		Upgrades =
 		{
-			["sbrocket"] =
 			{
 				Enabled = true,
 				SaveName = "sbrocket",
 				MetalCost = 700,
 				EnergyCost = 4000,
+			},
+			{
+				Enabled = true,
+				SaveName = "sbpropellerinfinite",
+				MetalCost = -250,
+				EnergyCost = -1700,
+				Button = "hud-sbinf-upgrade",
 			},
 		},
 		CompatibleGroupTypes =
@@ -307,5 +357,13 @@ table.insert(Weapons, IndexOfWeapon("sblightning") + 1,
 		MaxUpAngle = 30,
 		BuildOnGroundOnly = false,
 		SelectEffect = "ui/hud/weapons/ui_weapons",
-		
 })
+sbFFweaponApplyMod = function()
+	for k, v in pairs(Weapons) do
+		if v.MaxUpAngle then
+			if v.MaxUpAngle < 30 then v.MaxUpAngle = 30 end
+		else
+			v.MaxUpAngle = 30
+		end
+	end
+end

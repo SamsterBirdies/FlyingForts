@@ -1,6 +1,13 @@
+--vanilla modifiers
 local sandbagfastscrap = FindDevice("sandbags")
 if sandbagfastscrap then
 sandbagfastscrap.ScrapPeriod = 1.5
+end
+local barrel = FindDevice("barrel")
+if barrel then
+	barrel.MetalCost = 200
+	barrel.EnergyCost = 2000
+	barrel.NoReclaim = nil
 end
 table.insert(Sprites, DetailSprite("hud-detail-sbbombdevice", "sbbombdevice", path))
 table.insert(Sprites, ButtonSprite("hud-sbbomb-icon", "HUD/HUD-bomb", nil, ButtonSpriteBottom, nil, nil, path))
@@ -231,3 +238,12 @@ table.insert(Devices,
 		SelectEffect = "ui/hud/devices/ui_devices",
 		Tech = true,
 })
+sbFFmaterialApplyMod = function()
+	for k, v in pairs(Devices) do
+		if v.MaxUpAngle then
+			if v.MaxUpAngle < 30 then v.MaxUpAngle = 30 end
+		else
+			v.MaxUpAngle = 30
+		end
+	end
+end

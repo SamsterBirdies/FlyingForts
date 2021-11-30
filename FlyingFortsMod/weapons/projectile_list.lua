@@ -1,3 +1,5 @@
+dofile("scripts/type.lua")
+local debugAir = false
 table.insert(Projectiles,
 {
 	
@@ -115,12 +117,34 @@ table.insert(Projectiles,
 		},
 		Age =
 		{
-			t1000 = sbspawnjetair,
+			t850 = sbspawnjetair,
 		},
 	},
 	
 })
-
+sbspawnrocketair = {Projectile = { Count = 1, Type = "sbrocketair",  StdDev = 0.05 }, Terminate = true, }
+local rocketairinc = DeepCopy(FindProjectile("sbrocketair"))
+if rocketairinc then
+	rocketairinc.ProjectileIncendiary = true
+	rocketairinc.IncendiaryRadius = 50
+	rocketairinc.ProjectileDamage = 1
+	rocketairinc.IgnitesBackgroundMaterials = true
+	rocketairinc.IgnitesBackgroundMaterialsPassing = true
+	rocketairinc.IgnitesBackgroundMaterialsPassingSource = false
+	rocketairinc.DamageMultiplier = {{ SaveName = "sbcardboard", Direct = 10, Splash = 1 },{ SaveName = "sbrocket", Direct = 0, Splash = 1 }}
+	rocketairinc.SaveName = "sbrocketairinc"
+	rocketairinc.Effects.Age = { t150 = sbspawnrocketair}
+	table.insert(Projectiles, rocketairinc)
+end
+if debugAir then
+	local air = FindProjectile("sbair")
+	if air then air.ProjectileSprite = path .. "/effects/media/testP.png" end
+	local jetair = FindProjectile("sbjetair")
+	if jetair then jetair.ProjectileSprite = path .. "/effects/media/testJ.png" end
+	local rocketair = FindProjectile("sbrocketair")
+	if rocketair then rocketair.ProjectileSprite = path .. "/effects/media/testR.png" end
+	if rocketairinc then rocketairinc.ProjectileSprite = path .. "/effects/media/testRI.png" end
+end
 table.insert(Projectiles,
 {
 		SaveName = "sbcarpetbomb",
@@ -683,8 +707,7 @@ function InheritMaterialEffect(materialSaveName, effectInheritance)
 	end
 end
 
-sbff_oldApplyMod = ApplyMod
-function ApplyMod()
+sbFFapplyMod = function()
     if sbff_oldApplyMod then sbff_oldApplyMod() end
 	
 	InheritMaterialEffect("sbcardboard", "bracing")	
@@ -695,3 +718,4 @@ function ApplyMod()
 	table.insert(sbsawvscardboard.DamageMultiplier, { SaveName = "sbcardboardbg", Direct = 999,})
 	end
 end
+RegisterApplyMod(sbFFapplyMod)

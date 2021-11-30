@@ -39,7 +39,7 @@ Sprites =
 
 Effects =
 {
-	{
+	--[[{
 		Type = "sound",
 		TimeToTrigger = 0,
 		TimeToTriggerStdDev = 0.00,
@@ -50,7 +50,7 @@ Effects =
 		Priority = 192,
 		Repeat = false,
 		RandomiseStart = false,
-	},
+	},]]
 	--[[{
 		Type = "sound",
 		TimeToTrigger = 0.5,

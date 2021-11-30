@@ -1,15 +1,16 @@
-local sbsolarenable = FindMaterial("solar")
-if 	sbsolarenable then
-	sbsolarenable.Enabled = true
-	end
-	local sbbracingscrap = FindMaterial("bracing")
-if 	sbbracingscrap then
+local solar = FindMaterial("solar")
+if 	solar then
+	solar.Enabled = true
+	solar.BuildEffect = "effects/build_bracing.lua"
+end
+local sbbracingscrap = FindMaterial("bracing")
+if sbbracingscrap then
 	sbbracingscrap.ScrapTime = 1.0
-	end
-	local sbbracingbgscrap = FindMaterial("backbracing")
-if 	sbbracingbgscrap then
+end
+local sbbracingbgscrap = FindMaterial("backbracing")
+if sbbracingbgscrap then
 	sbbracingbgscrap.ScrapTime = 1.0
-	end
+end
 table.insert(Sprites, DetailSprite("hud-detail-sbcardboard", "sbcardboard", path))
 table.insert(Sprites, ButtonSprite("hud-sbcardboard-icon", "HUD/Materials-cardboard", nil, 0.664, nil, nil, path))
 table.insert(Materials,
@@ -43,7 +44,7 @@ table.insert(Materials,
 	EnergyRunCost = 0.0,
 	BuildTime = 1.5,
 	ScrapTime = 0.5,
-	RepairRateMultiplier = 1.0,
+	RepairRateMultiplier = 0.3,
 	CatchesFire = true,
 	SupportsDevices = false,
 	ReflectsBeams = false,
@@ -123,7 +124,7 @@ table.insert(Materials,
 	EnergyRunCost = 0.0,
 	BuildTime = 1.5,
 	ScrapTime = 0.5,
-	RepairRateMultiplier = 1.0,
+	RepairRateMultiplier = 0.3,
 	CatchesFire = true,
 	SupportsDevices = false,
 	ReflectsBeams = false,

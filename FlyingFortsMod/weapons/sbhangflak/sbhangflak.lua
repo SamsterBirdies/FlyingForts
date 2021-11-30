@@ -9,7 +9,7 @@ RecessionBox =
 }
 
 WeaponMass = 80.0
-HitPoints = 90.0
+HitPoints = 110.0
 EnergyProductionRate = 0.0
 MetalProductionRate = 0.0
 EnergyStorageCapacity = 0.0
@@ -18,8 +18,8 @@ MinWindEfficiency = 1
 MaxWindHeight = 0
 MaxRotationalSpeed = 0
 IgnitePlatformOnDestruct = true
-StructureSplashDamage = 50
-StructureSplashDamageMaxRadius = 150
+StructureSplashDamage = 15
+StructureSplashDamageMaxRadius = 100
 
 FireEffect = "mods/weapon_pack/effects/fire_flak.lua"
 ShellEffect = "effects/shell_eject_small.lua"

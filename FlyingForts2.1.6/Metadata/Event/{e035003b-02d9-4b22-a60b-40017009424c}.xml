@@ -70,7 +70,11 @@
 			<destination>{92f7025f-bf05-4f70-afde-cc14deac8f2f}</destination>
 		</relationship>
 	</object>
-	<object class="EventAutomatableProperties" id="{84e8c9d9-3cc4-4ef0-9400-ae75c14c90aa}" />
+	<object class="EventAutomatableProperties" id="{84e8c9d9-3cc4-4ef0-9400-ae75c14c90aa}">
+		<property name="priority">
+			<value>4</value>
+		</property>
+	</object>
 	<object class="MarkerTrack" id="{72343c57-e7f9-49b9-b578-7d101948484f}" />
 	<object class="GroupTrack" id="{ffb79672-ab94-4db7-8977-15e11abaacd7}">
 		<relationship name="automationTracks">
@@ -78,7 +82,7 @@
 			<destination>{a16639c2-2663-4175-8f85-1b65e9b759d7}</destination>
 		</relationship>
 		<relationship name="modules">
-			<destination>{fb7125ad-cbb7-44c8-b632-97fbea3c804c}</destination>
+			<destination>{93aba609-04d1-413c-b256-679d2459ad4c}</destination>
 		</relationship>
 		<relationship name="mixerGroup">
 			<destination>{bad5bec8-f3d7-49b5-999e-2633fa9c17b2}</destination>
@@ -86,7 +90,7 @@
 	</object>
 	<object class="Timeline" id="{1dfc231e-4143-42b4-bc94-ed44e08d01dd}">
 		<relationship name="modules">
-			<destination>{fb7125ad-cbb7-44c8-b632-97fbea3c804c}</destination>
+			<destination>{93aba609-04d1-413c-b256-679d2459ad4c}</destination>
 		</relationship>
 	</object>
 	<object class="ParameterProxy" id="{6247b07f-af1b-4fc5-bd03-228ca809a1fe}">
@@ -154,12 +158,12 @@
 			<destination>{4f09567e-4af1-4930-acd8-d03dd8e15d10}</destination>
 		</relationship>
 	</object>
-	<object class="SingleSound" id="{fb7125ad-cbb7-44c8-b632-97fbea3c804c}">
+	<object class="SingleSound" id="{93aba609-04d1-413c-b256-679d2459ad4c}">
 		<property name="length">
-			<value>5.447131519274377</value>
+			<value>5.4564463648075536</value>
 		</property>
 		<property name="timelockedOffset">
-			<value>0.044999999999999998</value>
+			<value>0.0356851544668223</value>
 		</property>
 		<relationship name="audioFile">
 			<destination>{9eda4de5-240f-4f0d-a03d-da396df923f8}</destination>
@@ -469,10 +473,10 @@
 	</object>
 	<object class="AutomationPoint" id="{65ac58e5-e3db-47db-8213-b2ee5d6c5d27}">
 		<property name="position">
-			<value>7514.3560295324032</value>
+			<value>7500</value>
 		</property>
 		<property name="value">
-			<value>7000</value>
+			<value>3000</value>
 		</property>
 	</object>
 	<object class="AutomationPoint" id="{1d4b8c2d-bf09-48ef-a07b-139c41ac94c2}">

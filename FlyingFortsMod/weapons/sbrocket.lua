@@ -9,7 +9,7 @@ RecessionBox =
 }
 
 WeaponMass = 40.0
-HitPoints = 100.0
+HitPoints = 131.0
 EnergyProductionRate = 0.0
 MetalProductionRate = 0.0
 EnergyStorageCapacity = 0.0
@@ -18,13 +18,20 @@ MinWindEfficiency = 1
 MaxWindHeight = 0
 MaxRotationalSpeed = 0
 
+DeviceSplashDamage = 80
+DeviceSplashDamageMaxRadius = 170
+DeviceSplashDamageDelay = 0.2
+IgnitePlatformOnDestruct = true
+StructureSplashDamage = 95
+StructureSplashDamageMaxRadius = 150
+
 FireEffect = path .. "/effects/rocket.lua"
 ConstructEffect = "effects/device_upgrade.lua"
 CompleteEffect = "effects/device_complete.lua"
-DestroyEffect = "effects/minigun_explode.lua"
+DestroyEffect = "effects/battery_explode.lua"
 ReloadEffect = nil
 ReloadEffectOffset = -.5
-Projectile = "sbrocketair"
+Projectile = "sbrocketairinc"
 BarrelLength = 60.0
 MinFireClearance = 0
 FireDelay = 0.17
@@ -145,7 +152,7 @@ Root =
 				{
 					Name = "Hardpoint0",
 					Angle = 90,
-					Pivot = { 0.00, -0.2 },
+					Pivot = { 0.4, -0.15 },
 					PivotOffset = { 0, 0 },
 				},
 				{

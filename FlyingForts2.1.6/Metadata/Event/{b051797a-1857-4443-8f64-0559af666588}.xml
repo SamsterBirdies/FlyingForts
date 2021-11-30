@@ -71,6 +71,9 @@
 		</relationship>
 	</object>
 	<object class="EventAutomatableProperties" id="{ac40e847-4626-41eb-9525-6021e6204b83}">
+		<property name="priority">
+			<value>3</value>
+		</property>
 		<property name="triggerCooldown">
 			<value>20</value>
 		</property>
@@ -197,7 +200,7 @@
 			<value>pitch</value>
 		</property>
 		<property name="amount">
-			<value>2</value>
+			<value>2.5</value>
 		</property>
 	</object>
 	<object class="MixerBusEffectChain" id="{83d82be2-bbae-458e-a873-e9350c8897df}">
@@ -388,7 +391,7 @@
 			<value>7514.3560295324032</value>
 		</property>
 		<property name="value">
-			<value>5000</value>
+			<value>2000</value>
 		</property>
 	</object>
 	<object class="AutomationPoint" id="{d84b5951-8028-4b0d-afd3-70e7588c5e9e}">
@@ -409,10 +412,10 @@
 	</object>
 	<object class="AutomationPoint" id="{28b892a7-8642-40ec-9806-8d02c6d2668f}">
 		<property name="position">
-			<value>7530.7629204265795</value>
+			<value>7500</value>
 		</property>
 		<property name="value">
-			<value>250</value>
+			<value>600</value>
 		</property>
 	</object>
 	<object class="AutomationPoint" id="{d66b9009-7b46-4f48-8c90-e3b50ebf1974}">

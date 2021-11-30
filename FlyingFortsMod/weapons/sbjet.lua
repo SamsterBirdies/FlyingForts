@@ -207,7 +207,7 @@ Root =
 				{
 					Name = "Hardpoint0",
 					Angle = 90,
-					Pivot = { 0.00, -0.2 },
+					Pivot = { 0.1, -0.15 },
 					PivotOffset = { 0, 0 },
 				},
 				{

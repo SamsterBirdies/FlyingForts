@@ -11,7 +11,7 @@ RecessionBox =
 ]]
 
 WeaponMass = 40.0
-HitPoints = 70.0
+HitPoints = 100.0
 EnergyProductionRate = 0.0
 MetalProductionRate = 0.0
 EnergyStorageCapacity = 0.0
@@ -38,8 +38,8 @@ MinFireClearance = 200
 FireClearanceOffsetInner = 20
 FireClearanceOffsetOuter = 40
 ReloadTime = 14
-MinFireSpeed = 49.0
-MaxFireSpeed = 50.0
+MinFireSpeed = 149.0
+MaxFireSpeed = 150.0
 MaxFireClamp = 0.8
 MinFireRadius = 200.0
 MaxFireRadius = 500.0
@@ -103,7 +103,7 @@ Root =
 					Name = "Hardpoint0",
 					Angle = 180,
 --					Pivot = { 0.5, 0 },
-					Pivot = { -0.0, 0.0 },
+					Pivot = { -0.0, 0.4 },
 					PivotOffset = { 0, 0 },
 				},
 				{
