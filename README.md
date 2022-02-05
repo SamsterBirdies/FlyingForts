@@ -3,7 +3,7 @@
  
  I will not be accepting new weapons because Flying Forts isn't supposed to be a weapon pack. Please fork this repo if you wish to do that.
  
-You are allowed to upload your own version of Flying Forts to the steam workshop, or copy anything in this mod for use in the steam workshop
+You are allowed to upload your own version of Flying Forts to the Forts steam workshop, or copy anything in this mod for use in the Forts steam workshop
  
  To get sound working in the mod, download FMOD studio version 2.1.6 and import the project folder "FlyingForts2.1.6".
  Delete the master bank, create a new master bank, and re-assign the sound events to that bank.
