@@ -6,7 +6,7 @@
 You are allowed to upload your own version of Flying Forts to the Forts steam workshop, or copy anything in this mod for use in the Forts Steam workshop.
 Usage of assets outside of the Forts Steam workshop is prohibited.
 
- To get sound working in the mod, download FMOD studio version 2.1.6 and import the project folder "FlyingForts2.1.6".
+ To get sound working in the mod, download FMOD studio version 2.1.9 and import the project folder "FlyingForts2.1.6".
  Delete the master bank, create a new master bank, and re-assign the sound events to that bank.
  Then "Build" the bank (F7), and copy the .bank files into FlyingFortsMod/audio/
 

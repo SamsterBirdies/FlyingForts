@@ -1,4 +1,7 @@
-FlyingFortsMod/audio/
-FlyingFortsMod/itemversion.lua
-FlyingFortsMod/publishedfileid.lua
+FlyingForts/audio/
+FlyingForts/itemversion.lua
+FlyingForts/publishedfileid.lua
 FlyingForts2.1.6/Build/audio/
+FlyingForts2.1.6/.user/
+FlyingForts2.1.6/.unsaved/
+FlyingForts2.1.6/.cache/
