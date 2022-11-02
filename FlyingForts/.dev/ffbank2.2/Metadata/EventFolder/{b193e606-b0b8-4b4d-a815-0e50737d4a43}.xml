@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="EventFolder" id="{b193e606-b0b8-4b4d-a815-0e50737d4a43}">
+		<property name="note">
+			<value>If you are making a new mod with this project, please delete the master bank and create a new one</value>
+		</property>
+		<property name="name">
+			<value>effects</value>
+		</property>
+		<relationship name="folder">
+			<destination>{247d0103-fe30-493a-8d7f-fb1fd0acc0fe}</destination>
+		</relationship>
+	</object>
+</objects>
