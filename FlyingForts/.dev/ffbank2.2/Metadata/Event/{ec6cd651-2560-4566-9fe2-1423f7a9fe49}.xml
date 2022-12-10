@@ -51,7 +51,6 @@
 		<relationship name="automationTracks">
 			<destination>{c675dcaf-520a-424f-a48b-fd3cc8eff538}</destination>
 			<destination>{38aa9292-65bf-438d-a04a-4c2f50bd879d}</destination>
-			<destination>{2aa7d238-e815-450c-942e-0f40593ac89a}</destination>
 		</relationship>
 		<relationship name="mixerGroup">
 			<destination>{a3b7f18e-20ff-421d-8b19-0ab89d28b62c}</destination>
@@ -121,11 +120,6 @@
 			<destination>{2ea77a65-f4ce-45dd-b068-0bb6dd115e08}</destination>
 		</relationship>
 	</object>
-	<object class="AutomationTrack" id="{2aa7d238-e815-450c-942e-0f40593ac89a}">
-		<relationship name="automator">
-			<destination>{4209e89e-2c48-4491-8fac-5377fe1dba9f}</destination>
-		</relationship>
-	</object>
 	<object class="MixerBusEffectChain" id="{ed3adecb-747c-4df5-a86c-fb186d4e094a}">
 		<relationship name="effects">
 			<destination>{20198f3d-77c4-4fdd-8748-443260d1794a}</destination>
@@ -161,7 +155,7 @@
 		<relationship name="effects">
 			<destination>{7a5ea690-cf9e-41ed-bd9a-584a996924c8}</destination>
 			<destination>{1b2c310a-c660-48c3-9860-82ab9508fca1}</destination>
-			<destination>{27fbe576-bf21-4a39-829a-02be82d0b2f9}</destination>
+			<destination>{66e1fd4b-316a-4f43-9e3c-29996803636f}</destination>
 			<destination>{88fcbe3f-0906-45e2-a228-7c80c310d8f0}</destination>
 			<destination>{ba0d1df4-2252-48ca-964f-093beadb7221}</destination>
 		</relationship>
@@ -186,12 +180,12 @@
 			<value>10000</value>
 		</property>
 	</object>
-	<object class="MultibandEqEffect" id="{27fbe576-bf21-4a39-829a-02be82d0b2f9}">
-		<property name="filterTypeA">
+	<object class="ProxyEffect" id="{66e1fd4b-316a-4f43-9e3c-29996803636f}">
+		<property name="inputFormat">
 			<value>2</value>
 		</property>
-		<relationship name="automators">
-			<destination>{4209e89e-2c48-4491-8fac-5377fe1dba9f}</destination>
+		<relationship name="preset">
+			<destination>{7b78fbba-8841-442f-920d-18e237f01423}</destination>
 		</relationship>
 	</object>
 	<object class="LowpassSimpleEffect" id="{88fcbe3f-0906-45e2-a228-7c80c310d8f0}">
@@ -211,14 +205,6 @@
 		</relationship>
 	</object>
 	<object class="MixerBusFader" id="{d69beb7a-ed17-4545-b082-1a1155caff0b}" />
-	<object class="Automator" id="{4209e89e-2c48-4491-8fac-5377fe1dba9f}">
-		<property name="nameOfPropertyBeingAutomated">
-			<value>frequencyA</value>
-		</property>
-		<relationship name="automationCurves">
-			<destination>{ba5c623b-312a-48d6-ad81-1fff9cc3eee7}</destination>
-		</relationship>
-	</object>
 	<object class="Automator" id="{2ea77a65-f4ce-45dd-b068-0bb6dd115e08}">
 		<property name="nameOfPropertyBeingAutomated">
 			<value>cutoff</value>
@@ -233,15 +219,6 @@
 		</property>
 		<relationship name="automationCurves">
 			<destination>{ca906481-ac19-47b9-bb29-369a6ca52d2a}</destination>
-		</relationship>
-	</object>
-	<object class="AutomationCurve" id="{ba5c623b-312a-48d6-ad81-1fff9cc3eee7}">
-		<relationship name="parameter">
-			<destination>{c30476de-e469-48fd-9c2d-1ecffa4f1d42}</destination>
-		</relationship>
-		<relationship name="automationPoints">
-			<destination>{ec888951-1028-4ed6-aa3d-94b2774a7ed8}</destination>
-			<destination>{4e405a48-5ab4-4048-9f68-747567a3e2a7}</destination>
 		</relationship>
 	</object>
 	<object class="AutomationCurve" id="{3e2457c1-17d4-40fe-bd9a-3be4aae21105}">
@@ -261,22 +238,6 @@
 			<destination>{1549b4de-4df8-4c9c-8432-71b6169235aa}</destination>
 			<destination>{24bde721-0113-419d-9531-3c8da93fb7ef}</destination>
 		</relationship>
-	</object>
-	<object class="AutomationPoint" id="{ec888951-1028-4ed6-aa3d-94b2774a7ed8}">
-		<property name="position">
-			<value>0.34154351395730703</value>
-		</property>
-		<property name="value">
-			<value>280</value>
-		</property>
-	</object>
-	<object class="AutomationPoint" id="{4e405a48-5ab4-4048-9f68-747567a3e2a7}">
-		<property name="position">
-			<value>0.14999999999999999</value>
-		</property>
-		<property name="value">
-			<value>22000</value>
-		</property>
 	</object>
 	<object class="AutomationPoint" id="{e332a054-c3c6-440c-9464-96f9de4e6c93}">
 		<property name="position">

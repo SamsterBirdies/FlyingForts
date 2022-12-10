@@ -52,7 +52,6 @@
 			<destination>{c3b35ed2-4f0f-4b02-8de6-80e41dd469a5}</destination>
 			<destination>{16c69343-5443-49e7-bd47-c98b48b9b80d}</destination>
 			<destination>{18888294-c08f-4567-8744-aa43f47453bb}</destination>
-			<destination>{c2462ebe-8dab-4811-a537-e436135ee247}</destination>
 		</relationship>
 		<relationship name="mixerGroup">
 			<destination>{1a1e9ae4-73c5-46a0-b28e-45c149a0edca}</destination>
@@ -130,11 +129,6 @@
 			<destination>{70d5b6c9-1041-431e-bce0-f7fa0a0cf598}</destination>
 		</relationship>
 	</object>
-	<object class="AutomationTrack" id="{c2462ebe-8dab-4811-a537-e436135ee247}">
-		<relationship name="automator">
-			<destination>{0018209c-14f9-483f-88ec-1b7615e41fc8}</destination>
-		</relationship>
-	</object>
 	<object class="MixerBusEffectChain" id="{6edd1b5d-904a-400e-bfb9-594d97828a6a}">
 		<relationship name="effects">
 			<destination>{5db64a49-a20e-42f6-9445-2fbf5dee89be}</destination>
@@ -170,7 +164,7 @@
 		<relationship name="effects">
 			<destination>{563dd334-2309-4339-9366-4b2f7cf64ba4}</destination>
 			<destination>{af980cf0-12a3-40aa-a23b-16f6952eb682}</destination>
-			<destination>{8df9d844-fac2-4ba5-8ca9-dd9130d7929a}</destination>
+			<destination>{44a1e2eb-a6ad-4633-a074-78d6051614f3}</destination>
 			<destination>{f47724ff-6bbc-471d-991d-831ab643c689}</destination>
 			<destination>{05aec0e2-c4ad-4fe9-846f-8b182cff3519}</destination>
 			<destination>{5815f7b1-4eb4-4acf-a31f-eb20b501c484}</destination>
@@ -196,12 +190,12 @@
 			<value>10000</value>
 		</property>
 	</object>
-	<object class="MultibandEqEffect" id="{8df9d844-fac2-4ba5-8ca9-dd9130d7929a}">
-		<property name="filterTypeA">
+	<object class="ProxyEffect" id="{44a1e2eb-a6ad-4633-a074-78d6051614f3}">
+		<property name="inputFormat">
 			<value>2</value>
 		</property>
-		<relationship name="automators">
-			<destination>{0018209c-14f9-483f-88ec-1b7615e41fc8}</destination>
+		<relationship name="preset">
+			<destination>{7b78fbba-8841-442f-920d-18e237f01423}</destination>
 		</relationship>
 	</object>
 	<object class="LowpassSimpleEffect" id="{f47724ff-6bbc-471d-991d-831ab643c689}">
@@ -226,14 +220,6 @@
 		</relationship>
 	</object>
 	<object class="MixerBusFader" id="{4c01ceb3-14be-4209-9dcb-f6c92c0573ba}" />
-	<object class="Automator" id="{0018209c-14f9-483f-88ec-1b7615e41fc8}">
-		<property name="nameOfPropertyBeingAutomated">
-			<value>frequencyA</value>
-		</property>
-		<relationship name="automationCurves">
-			<destination>{fa11791d-e029-478b-aa99-b3ddcbd065b7}</destination>
-		</relationship>
-	</object>
 	<object class="Automator" id="{70d5b6c9-1041-431e-bce0-f7fa0a0cf598}">
 		<property name="nameOfPropertyBeingAutomated">
 			<value>cutoff</value>
@@ -256,15 +242,6 @@
 		</property>
 		<relationship name="automationCurves">
 			<destination>{b89d2017-8531-49e9-8f95-b85074e1e0ce}</destination>
-		</relationship>
-	</object>
-	<object class="AutomationCurve" id="{fa11791d-e029-478b-aa99-b3ddcbd065b7}">
-		<relationship name="parameter">
-			<destination>{c30476de-e469-48fd-9c2d-1ecffa4f1d42}</destination>
-		</relationship>
-		<relationship name="automationPoints">
-			<destination>{5cdde8d4-d6ad-4726-a534-d3a80df3e2b3}</destination>
-			<destination>{42b465ea-b2ae-4e92-839e-2aec535c677d}</destination>
 		</relationship>
 	</object>
 	<object class="AutomationCurve" id="{d4e7a285-a6a8-4523-85fc-3fd1b6f6ed53}">
@@ -293,22 +270,6 @@
 			<destination>{ef74f6ff-fff4-4ac3-a6bb-708b1d6c5897}</destination>
 			<destination>{648c7939-c343-481d-9e5b-f67505374bba}</destination>
 		</relationship>
-	</object>
-	<object class="AutomationPoint" id="{5cdde8d4-d6ad-4726-a534-d3a80df3e2b3}">
-		<property name="position">
-			<value>0.42364532019704432</value>
-		</property>
-		<property name="value">
-			<value>400</value>
-		</property>
-	</object>
-	<object class="AutomationPoint" id="{42b465ea-b2ae-4e92-839e-2aec535c677d}">
-		<property name="position">
-			<value>0.16</value>
-		</property>
-		<property name="value">
-			<value>22000</value>
-		</property>
 	</object>
 	<object class="AutomationPoint" id="{2daa6635-209f-45c7-af74-e06bb7aaf181}">
 		<property name="position">
