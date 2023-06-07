@@ -114,6 +114,7 @@ table.insert(Devices, IndexOfDevice("sandbags") + 1,
 		BuildOnGroundOnly = false,
 		SelectEffect = "ui/hud/devices/ui_devices",
 		HasDummy = false,
+		ObserverBuildEvent = true,
 })
 table.insert(Sprites, DetailSprite("hud-detail-sbballoon", "sbballoon", path))
 table.insert(Sprites, ButtonSprite("hud-sbballoon-icon", "HUD/HUD-balloon", nil, ButtonSpriteBottom, nil, nil, path))
@@ -187,6 +188,7 @@ table.insert(Devices, IndexOfDevice("upgrade"),
 	IgnitePlatformOnDestruct = true,
 	SelectEffect = "ui/hud/technology/ui_technology",
 	Tech = true,
+	ObserverBuildEvent = true,
 })
 table.insert(Sprites, DetailSprite("hud-detail-sbiontech", "sbiontech", path))
 table.insert(Sprites, ButtonSprite("hud-sbiontech-icon", "HUD/HUD-sbiontech", nil, ButtonSpriteBottom, nil, nil, path))
@@ -213,6 +215,7 @@ table.insert(Devices, IndexOfDevice("factory") + 1,
 	IgnitePlatformOnDestruct = true,
 	SelectEffect = "ui/hud/technology/ui_technology",
 	Tech = true,
+	ObserverBuildEvent = true,
 })
 table.insert(Sprites, ButtonSprite("hud-sbffdcballoon-icon", "HUD/HUD-ffdcballoon", nil, ButtonSpriteBottom, nil, nil, path))
 table.insert(Devices,

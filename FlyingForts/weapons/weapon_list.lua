@@ -162,6 +162,7 @@ table.insert(Weapons, IndexOfWeapon("machinegun"),
 			"sbpropeller",
 			"sbjet",
 		},
+		ObserverBuildEvent = true,
 })
 table.insert(Sprites, DetailSprite("hud-detail-sbbomb", "sbbomb", path))
 table.insert(Sprites, ButtonSprite("hud-group-sbbomb", "groups/Group-sbbomb", GroupButtonSpriteBottom, GroupButtonSpriteBottom, nil, nil, path))
@@ -299,7 +300,7 @@ table.insert(Weapons, IndexOfWeapon("sbhangflak") + 1,
 		MaxUpAngle = 30,
 		BuildOnGroundOnly = false,
 		SelectEffect = "ui/hud/weapons/ui_weapons",
-		
+		ObserverBuildEvent = true,
 })
 table.insert(Sprites, DetailSprite("hud-detail-sblightning", "sblightning", path))
 table.insert(Sprites, ButtonSprite("hud-group-sblightning", "groups/Group-sblightning", GroupButtonSpriteBottom, GroupButtonSpriteBottom, nil, nil, path))
@@ -328,7 +329,7 @@ table.insert(Weapons,
 		MaxUpAngle = 30,
 		BuildOnGroundOnly = false,
 		SelectEffect = "ui/hud/weapons/ui_weapons",
-		
+		ObserverBuildEvent = true,
 })
 table.insert(Sprites, DetailSprite("hud-detail-sbthunder", "sbthunder", path))
 table.insert(Sprites, ButtonSprite("hud-group-sbthunder", "groups/Group-sbthunder", GroupButtonSpriteBottom, GroupButtonSpriteBottom, nil, nil, path))
@@ -357,6 +358,7 @@ table.insert(Weapons, IndexOfWeapon("sblightning") + 1,
 		MaxUpAngle = 30,
 		BuildOnGroundOnly = false,
 		SelectEffect = "ui/hud/weapons/ui_weapons",
+		ObserverBuildEvent = true,
 })
 sbFFweaponApplyMod = function()
 	for k, v in pairs(Weapons) do
