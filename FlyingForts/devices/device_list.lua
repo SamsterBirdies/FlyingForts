@@ -9,6 +9,8 @@ if barrel then
 	barrel.EnergyCost = 2000
 	barrel.NoReclaim = nil
 end
+local platformAngle = FindDevice("turbine").MaxUpAngle
+if platformAngle < 30 then platformAngle = 30 end
 table.insert(Sprites, DetailSprite("hud-detail-sbbombdevice", "sbbombdevice", path))
 table.insert(Sprites, ButtonSprite("hud-sbbomb-icon", "HUD/HUD-bomb", nil, ButtonSpriteBottom, nil, nil, path))
 table.insert(Devices, IndexOfDevice("sandbags") + 1,
@@ -29,7 +31,7 @@ table.insert(Devices, IndexOfDevice("sandbags") + 1,
 		MetalReclaimMax = 0.5,
 		EnergyReclaimMin = 0.1,
 		EnergyReclaimMax = 0.5,
-		MaxUpAngle = 30,
+		MaxUpAngle = platformAngle,
 		BuildOnGroundOnly = false,
 		SelectEffect = "ui/hud/devices/ui_devices",
 })
@@ -53,7 +55,7 @@ table.insert(Devices, IndexOfDevice("sandbags") + 1,
 		MetalReclaimMax = 0.5,
 		EnergyReclaimMin = 0.1,
 		EnergyReclaimMax = 0.5,
-		MaxUpAngle = StandardMaxUpAngle,
+		MaxUpAngle = platformAngle,
 		BuildOnGroundOnly = false,
 		SelectEffect = "ui/hud/devices/ui_devices",
 		Upgrades =
@@ -86,7 +88,7 @@ table.insert(Devices, IndexOfDevice("sandbags") + 1,
 		MetalReclaimMax = 0.5,
 		EnergyReclaimMin = 0.1,
 		EnergyReclaimMax = 0.5,
-		MaxUpAngle = StandardMaxUpAngle,
+		MaxUpAngle = platformAngle,
 		BuildOnGroundOnly = false,
 		SelectEffect = "ui/hud/devices/ui_devices",
 })
@@ -110,7 +112,7 @@ table.insert(Devices, IndexOfDevice("sandbags") + 1,
 		MetalReclaimMax = 0.5,
 		EnergyReclaimMin = 0.1,
 		EnergyReclaimMax = 0.5,
-		MaxUpAngle = StandardMaxUpAngle,
+		MaxUpAngle = platformAngle,
 		BuildOnGroundOnly = false,
 		SelectEffect = "ui/hud/devices/ui_devices",
 		HasDummy = false,
@@ -136,7 +138,7 @@ table.insert(Devices, IndexOfDevice("sandbags") + 1,
 		MetalReclaimMax = 0.5,
 		EnergyReclaimMin = 0.1,
 		EnergyReclaimMax = 0.5,
-		MaxUpAngle = StandardMaxUpAngle,
+		MaxUpAngle = platformAngle,
 		BuildOnGroundOnly = false,
 		SelectEffect = "ui/hud/devices/ui_devices",
 })
@@ -160,7 +162,7 @@ table.insert(Devices, IndexOfDevice("sandbags") + 1,
 		MetalReclaimMax = 0.5,
 		EnergyReclaimMin = 0.1,
 		EnergyReclaimMax = 0.5,
-		MaxUpAngle = StandardMaxUpAngle,
+		MaxUpAngle = platformAngle,
 		BuildOnGroundOnly = false,
 		SelectEffect = "ui/hud/devices/ui_devices",
 })
@@ -182,7 +184,7 @@ table.insert(Devices, IndexOfDevice("upgrade"),
 	MetalReclaimMax = 0.5,
 	EnergyReclaimMin = 0.1,
 	EnergyReclaimMax = 0.5,
-	MaxUpAngle = StandardMaxUpAngle,
+	MaxUpAngle = platformAngle,
 	BuildOnGroundOnly = false,
 	PopulationCap = 1,
 	IgnitePlatformOnDestruct = true,
@@ -209,7 +211,7 @@ table.insert(Devices, IndexOfDevice("factory") + 1,
 	MetalReclaimMax = 0.5,
 	EnergyReclaimMin = 0.1,
 	EnergyReclaimMax = 0.5,
-	MaxUpAngle = StandardMaxUpAngle,
+	MaxUpAngle = platformAngle,
 	BuildOnGroundOnly = false,
 	PopulationCap = 1,
 	IgnitePlatformOnDestruct = true,
@@ -236,17 +238,8 @@ table.insert(Devices,
 		MetalReclaimMax = 0.5,
 		EnergyReclaimMin = 0.1,
 		EnergyReclaimMax = 0.5,
-		MaxUpAngle = StandardMaxUpAngle,
+		MaxUpAngle = platformAngle,
 		BuildOnGroundOnly = false,
 		SelectEffect = "ui/hud/devices/ui_devices",
 		Tech = true,
 })
-sbFFmaterialApplyMod = function()
-	for k, v in pairs(Devices) do
-		if v.MaxUpAngle then
-			if v.MaxUpAngle < 30 then v.MaxUpAngle = 30 end
-		else
-			v.MaxUpAngle = 30
-		end
-	end
-end
